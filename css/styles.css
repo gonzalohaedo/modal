@@ -1,0 +1,60 @@
+/*SENTENCIAS GLOBALES -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0a0c10;
+  font-family: "Montserrat", sans-serif;
+}
+/* FIN SENTENCIAS GLOBALES -------------------------------------------------- */
+
+.totalSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.openerButton {
+  background-color: #279d2e;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modalContainer .modal-content {
+  background-color: #1c1f25;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #279d2e;
+  width: 30%;
+  height: 70%;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.modalContainer .close {
+  color: white;
+  float: right;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #1c1f25;
+}
+
+.modalContainer .close:hover,
+.close:focus {
+  color: #279d2e;
+  text-decoration: none;
+  cursor: pointer;
+}
